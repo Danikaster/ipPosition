@@ -1,14 +1,12 @@
-package com.ip_position.ipPosition.controller;
+package com.ip_position.ip_position.controller;
 
 // IpInfoController.java
-import com.ip_position.ipPosition.model.IpPositionModel;
-import com.ip_position.ipPosition.service.IpPositionService;
+import com.ip_position.ip_position.model.IpPositionModel;
+import com.ip_position.ip_position.service.IpPositionService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/api")

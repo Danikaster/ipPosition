@@ -1,6 +1,6 @@
-package com.ip_position.ipPosition.service;
+package com.ip_position.ip_position.service;
 
-import com.ip_position.ipPosition.model.IpPositionModel;
+import com.ip_position.ip_position.model.IpPositionModel;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;

@@ -1,4 +1,4 @@
-package com.ip_position.ipPosition;
+package com.ip_position.ip_position;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
