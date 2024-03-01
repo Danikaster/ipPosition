@@ -17,9 +17,17 @@ public class IpPositionController {
         this.ipPositionService = ipPositionService;
     }
 
+    private boolean isValidIpAddress(String ip) {
+        return ip.matches("\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}");
+    }
+
     @GetMapping("/{ip}")
     public IpPositionModel getIpInfo(@PathVariable String ip) {
-        return ipPositionService.getIpInfo(ip);
+        if(ip!=null && isValidIpAddress(ip))
+            return ipPositionService.getIpInfo(ip);
+        else
+            return new IpPositionModel();
     }
+
 }
 

@@ -8,6 +8,10 @@ public class IpPositionModel {
     private Double latitude;
     private Double longitude;
 
+    public IpPositionModel() {
+
+    }
+
     public String getIp() {
         return ip;
     }
