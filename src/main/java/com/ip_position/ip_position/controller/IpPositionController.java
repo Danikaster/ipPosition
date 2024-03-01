@@ -1,6 +1,6 @@
 package com.ip_position.ip_position.controller;
 
-import com.ip_position.ip_position.model.IpPositionModel;
+import com.ip_position.ip_position.entity.IpPositionModel;
 import com.ip_position.ip_position.service.IpPositionService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

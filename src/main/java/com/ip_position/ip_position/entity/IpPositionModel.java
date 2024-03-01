@@ -1,4 +1,4 @@
-package com.ip_position.ip_position.model;
+package com.ip_position.ip_position.entity;
 
 public class IpPositionModel {
     private String ip;
