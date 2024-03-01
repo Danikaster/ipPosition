@@ -9,7 +9,12 @@ public class IpPositionModel {
     private Double longitude;
 
     public IpPositionModel() {
-
+        this.ip = null;
+        this.continent = null;
+        this.country = null;
+        this.city = null;
+        this.latitude = null;
+        this.longitude = null;
     }
 
     public String getIp() {
