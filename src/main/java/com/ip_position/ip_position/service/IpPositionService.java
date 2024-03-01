@@ -10,8 +10,9 @@ public class IpPositionService {
 
     public IpPositionModel getIpInfo(String ip) {
         String apiUrl = "http://ipwho.is/" + ip;
+        String finalUrl = UriComponentsBuilder.fromUriString(apiUrl).buildAndExpand(ip).toUriString();
 
         RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.getForObject(apiUrl, IpPositionModel.class);
+        return restTemplate.getForObject(finalUrl, IpPositionModel.class);
     }
 }
