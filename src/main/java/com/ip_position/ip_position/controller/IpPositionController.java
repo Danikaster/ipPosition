@@ -18,7 +18,7 @@ public class IpPositionController {
     }
 
     private boolean isValidIpAddress(String ip) {
-        return ip.matches("^((25[0-5]|(2[0-4]|1\\d|[1-9]|)\\d)\\.?\\b){4}$");
+            return ip.matches("^((25[0-5]|(2[0-4]|1\\d|[1-9]|)\\d)\\.?\\b){4}$");
     }
 
     @GetMapping("/{ip}")
